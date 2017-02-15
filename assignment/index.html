@@ -9,10 +9,23 @@
   <body>
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- =====================
-      Add elements in this space
-      ====================== -->
+      <h3>Map Your Own Data!</h3>
+
+      <div id="inputFields">
+        URL of Database:<br>
+        <input type="text" id="URL"><br><br>
+        Latitude Field Key:<br>
+        <input type="text" id="latkey"><br><br>
+        Longitude Field Key:<br>
+        <input type="text" id="lonkey"><br><br>
+        <button type="submit" id="map-button">Map Data</button>
+      </div>
+
+    <!--ALTERNATIVE: use form as the div style, but I'm not sure how this changes it...-->
+
+
     </div>
+
     <!-- Map -->
     <div id="map" class="map"></div>
     <!-- Javascript Imports -->
@@ -22,3 +35,18 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+
+<!-- FROM Wk4, part3 FOR ADDING A FILTER BUTTON LATER
+<div style="position: absolute; left: 0px; width: 400px; top: 0; bottom: 0;">
+  <br>
+  Numeric filter: <input id="num1" type="number" name="num1" value=""> to <input id="num2" type="number" name="num2" value="">
+  <br>
+  String filter: <input id="string" type="text">
+  <br>
+  Boolean filter: <input id="boolean" type="checkbox">
+  <br>
+  <button id="my-button">Plot Data</button>
+</div> -->
