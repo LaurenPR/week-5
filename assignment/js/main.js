@@ -77,7 +77,7 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
  CODE EXECUTED HERE!
 ===================== */
 
-
+var markers = [];
 
 /* =====================
   The code here is triggered when you click on the button with ID #my-button
@@ -115,7 +115,7 @@ $('button#map-button').click(function(e) {
     var parsed = parseData(data);
     // console.log(parsed);
     // var filtered = filterData(parsed);
-    var markers = makeMarkers(parsed, latField, longField);
+    markers = makeMarkers(parsed, latField, longField);
     plotMarkers(markers);
   });
 });
